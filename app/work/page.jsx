@@ -71,7 +71,7 @@ const Work = () => {
                     delay: 2.4, duration: 0.4, ease: "easeIn"
                 }
             }}
-            className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+            className="min-h-[80vh] flex flex-col justify-center py-7 xl:px-0"
         >
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row xl:gap-[30px]">
@@ -88,7 +88,7 @@ const Work = () => {
                             {/* project description */}
                             <p className="text-white/60">{project.description}</p>
                             {/* stack */}
-                            <ul className="flex gap-4 flex-wrap">
+                            <ul className="flex gap-4 flex-wrap xl:flex-nowrap">
                                 {project.stack.map((item, index) => {
                                     return (
                                         <li key={index} className="text-xl text-accent">
@@ -135,7 +135,7 @@ const Work = () => {
                     </div>
                     <div className="w-full xl:w-[50%]">
                         <Swiper spaceBetween={30} slidesPerView={1}
-                            className="xl:h-[520px] mb-12"
+                            className="xl:h-[520px] mb-5"
                             onSlideChange={handleSlideChange}>
                             {projects.map((project, index) => {
                                 return (
