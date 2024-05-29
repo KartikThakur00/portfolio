@@ -90,13 +90,13 @@ const Contact = () => {
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
                 return (
-                  <li key={index} className="flex items-center gap-6">
+                  <li key={index} className="flex items-start sm:items-center sm:flex-row flex-col gap-6">
                     <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                      <div className="text-[28px]"> {item.icon}</div>
+                      <div className="text-[28px] "> {item.icon}</div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-white/60 text-[12px] sm:text-[20px]">{item.title}</p>
-                      <h3 className="text-xl text-[16px] sm:text-[20px]">{item.description}</h3>
+                      <p className="text-white/60 px-6 sm:px-0">{item.title}</p>
+                      <h3 className="text-xl px-6 sm:px-0">{item.description}</h3>
                     </div>
                   </li>
                 )
