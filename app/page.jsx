@@ -32,7 +32,7 @@ const Home = () => {
                 className="uppercase "
               >
                 <Link
-                href="https://drive.google.com/file/d/16X5K_DiCavaF5nBBbeT5amW5FkbmHs3h/view?usp=sharing"
+                href="https://drive.google.com/file/d/11LqDVhigfnBWLM6sZzH9eo_GcxU0bZPt/view?usp=drive_link"
                 className="flex items-center gap-2"
                 >
                 <span>Download CV</span>
