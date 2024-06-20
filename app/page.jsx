@@ -5,7 +5,6 @@ import Link from "next/link"
 // components
 import Social from "@/components/Social"
 import Photo from "@/components/Photo"
-import Stats from "@/components/Stats"
 
 const Home = () => {
   return (
@@ -22,7 +21,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+              proficient in MERN Stack
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

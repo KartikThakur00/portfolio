@@ -1,9 +1,10 @@
 "use client"
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { CiMenuFries } from "react-icons/ci"
+import { Button } from "./ui/button"
 
 const links = [
   {
@@ -53,7 +54,9 @@ const MobileNav = () => {
               className={`${link.path === pathname && "text-accent border-b-2 border-accent"} 
               text-xl capitalize hover:text-accent transition-all`}
             >
-              {link.name}
+              <SheetClose>
+                {link.name}
+              </SheetClose>
             </Link>
           })}
         </nav>
